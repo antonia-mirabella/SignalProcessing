@@ -22,7 +22,7 @@ show(ta, x, "Sinusoidala cu 400 Hz, 1600 esantioane","Lab1Ex2a.pdf")
 tb = np.arange(0, 3, 1 / 8000)
 x = np.sin(2 * np.pi * 800 * tb)
 
-show(tb[:80], x[:80], "Sinusoidala cu 800 Hz, 3 secunde","Lab1Ex2b.pdf")
+show(tb[:80], x[:80], "Sinusoidala cu 800 Hz, 3 secunde (zoomed in)","Lab1Ex2b.pdf")
 
 #  C 
 

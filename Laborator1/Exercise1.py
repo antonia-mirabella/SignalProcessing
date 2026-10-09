@@ -1,17 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def show(time, function, figureTitle, fileName, stem = False):
-    plt.figure()
-    plt.plot(time, function)
-    if stem:
-        plt.stem(time, function)
-    plt.title(figureTitle)
-    plt.xlabel('time (s)') 
-    plt.ylabel('func value') 
-    plt.savefig(fileName)
-    plt.show()
-
 #  A + B
 
 t = np.arange(0, 0.03, 0.0005)
