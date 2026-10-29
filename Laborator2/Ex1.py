@@ -14,5 +14,6 @@ axs[1].plot(t, y)
 
 fig.suptitle("Semnal sinus identic cu semnal cosinus")
 
-plt.show()
 plt.savefig('Lab2Ex1.pdf')
+
+plt.show()

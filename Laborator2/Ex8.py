@@ -55,9 +55,11 @@ plt.figure()
 plt.plot(alpha, eroaretaylor, label='eroare Taylor')
 plt.plot(alpha, eroarepade, label='eroare Pade')
 plt.yscale('log')
+
 plt.title('Eroarea Taylor si Pade, axa Oy logaritmica')
 plt.xlabel('x')
 plt.ylabel('eroare')
 plt.legend()
+
 plt.savefig('Lab2Ex8d.pdf')
 plt.show()

@@ -15,8 +15,8 @@ for i, phi in enumerate([ np.pi, np.pi / 2, np.pi / 3, -(np.pi / 3)]):
 
 fig.suptitle("4 semnale cu faze diferite")
 
-plt.show()
 plt.savefig("Lab2Ex2a.pdf")
+plt.show()
 
 
 fig, axs = plt.subplots(4, 1, sharex=True)
@@ -29,6 +29,6 @@ for i, ratio in enumerate([0.1, 1, 10, 100]):
     axs[i].plot(t, x)
     axs[i].set_title(f"SNR {ratio}")
 
-axs[-1].set_xlabel('timp (s)')
 fig.suptitle('Semnal cu zgomot')
+plt.savefig("Lab2Ex2b.pdf")
 plt.show()
