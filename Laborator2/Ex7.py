@@ -20,11 +20,11 @@ plt.show()
 
 #  B
 
-fig, axs = plt.subplots(1)
-fig.suptitle('Semnal decimat la fs / 4 pornind de la al doilea element')
+plt.figure()
+plt.suptitle('Semnal decimat la fs / 4 pornind de la al doilea element')
 
-axs[0].stem(t[1::4], x[1::4])
-axs[0].plot(t, x)
+plt.stem(t[1::4], x[1::4])
+plt.plot(t, x)
 
 
 plt.savefig('Lab2Ex7b.pdf')

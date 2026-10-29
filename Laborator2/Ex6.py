@@ -2,8 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 fs = 1600
-# t = np.arange(0, 1, 1 / fs)
-t = np.linspace(0, 3/ 16, int(fs/16))
+
+#  t catches xa at sin(pi*n) always so xa is 0 for this t and all info on this signal is lost
+# t = np.arange(0, 0.02, 1 / fs)
+
+t = np.linspace(0, 1/ 16, int((1/16) * fs))
 
 xa = np.round(np.sin(2 * np.pi * (fs / 2) * t), 10)
 xb = np.round(np.sin(2 * np.pi * (fs / 4) * t), 10)
@@ -25,6 +28,6 @@ for i, sig in enumerate(sigs):
 
 axs[2].set_xlabel('timp (s)')
 
-plt.tight_layout
+plt.tight_layout()
 plt.savefig('Lab2Ex6.pdf')
 plt.show()

@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 #         print(F8[m][k])
 #     print()
 
-Fourier8 = np.array([[np.cos(2 * np.pi * (m * k) / 8) - 1j * np.sin(2 * np.pi * m * k) for k in range(8)] for m in range(8)], dtype=complex)
+Fourier8 = np.array([[np.cos(2 * np.pi * m * k / 8) - 1j * np.sin(2 * np.pi * m * k) for k in range(8)] for m in range(8)], dtype=complex)
 
 # Fnew = np.divide(Fourier8, 1/ (np.sqrt(8)))
 
