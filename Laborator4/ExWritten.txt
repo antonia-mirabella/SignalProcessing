@@ -1,0 +1,27 @@
+      Ex 4
+  Nyquist limit : 2 * 200 = 400
+  Also, undersampling <=> sampling a bandpass-filtered signal 
+  below to Nyquist rate but stil able to reproduce the signal 
+
+   get bandwidth: 200 - 40 = 160 
+  (2*f_h) / n <= fs <= (2 * f_l ) / (n - 1)
+   where n satisfies 
+  1 <= n <= (f_h / (bandwidth)), n is an integer
+
+  so, we get
+  1 <= n <= (200/160) = 1.25
+  so n can only be equal to 1....
+
+  therefore we get, smallest possible sampling rate
+  400 <= fs <= infinity
+
+ so, no undersampling possible for this case ): 
+
+      Ex 7
+
+PSignal = 90dB
+SNR = 80dB
+Noise power = ? 
+
+PNoise = PSignal / SNR = 1.125
+
