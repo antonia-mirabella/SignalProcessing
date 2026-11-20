@@ -18,7 +18,8 @@ axs[0].set_ylabel('x')
 
 freqs = np.arange(N) * 1000 / N
 
-axs[1].stem(freqs[:100], np.abs(X[:100]))
+axs[1].stem(freqs, np.abs(X))
+# axs[1].stem(freqs[:100], np.abs(X[:100]))
 axs[1].set_xlabel('frecventa (Hz)')
 axs[1].set_ylabel('|X|')
 

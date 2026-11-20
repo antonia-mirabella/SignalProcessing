@@ -19,7 +19,7 @@ plt.show()
 
 #  C
 
-tc = np.arange(0, 0.03, 1/ 200)
+tc = np.arange(0, 0.03, 1 / 200)
 xc = np.cos(520 * np.pi * tc +  np.pi / 3)
 yc = np.cos(280 * np.pi * tc - np.pi / 3)
 zc = np.cos(120 * np.pi * tc +  np.pi / 3)
